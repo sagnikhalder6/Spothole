@@ -1,5 +1,6 @@
 import './globals.css';
 import Nav from '../components/Nav';
+import { Analytics } from '@vercel/analytics/next';
 
 export const metadata = {
   title: 'Pot Hole Detector',
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
         <div className="topbar">🕳️ Pot Hole Detector</div>
         {children}
         <Nav />
+        <Analytics />
       </body>
     </html>
   );
